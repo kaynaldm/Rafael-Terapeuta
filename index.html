@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Creator Link in Bio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#d5e3ff",
+                        "on-tertiary": "#4c2714",
+                        "error": "#ffb4ab",
+                        "on-tertiary-container": "#aa765e",
+                        "on-tertiary-fixed": "#321203",
+                        "on-primary": "#1a324c",
+                        "outline-variant": "#43474d",
+                        "surface-bright": "#38393b",
+                        "tertiary-container": "#2f1002",
+                        "tertiary": "#f6b99e",
+                        "surface-variant": "#343537",
+                        "primary": "#b1c8e9",
+                        "inverse-surface": "#e3e2e4",
+                        "surface-container-high": "#292a2c",
+                        "surface-container": "#1f2022",
+                        "on-primary-container": "#6d84a2",
+                        "primary-container": "#001a33",
+                        "on-secondary": "#003061",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "surface": "#121315",
+                        "surface-container-low": "#1b1c1e",
+                        "on-primary-fixed-variant": "#324863",
+                        "primary-fixed-dim": "#b1c8e9",
+                        "tertiary-fixed-dim": "#f6b99e",
+                        "on-secondary-container": "#93b6f1",
+                        "on-error": "#690005",
+                        "on-background": "#e3e2e4",
+                        "on-secondary-fixed": "#001b3c",
+                        "surface-container-lowest": "#0d0e10",
+                        "inverse-on-surface": "#303032",
+                        "on-tertiary-fixed-variant": "#663c28",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-surface-variant": "#c4c6ce",
+                        "surface-tint": "#b1c8e9",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#4a607c",
+                        "surface-container-highest": "#343537",
+                        "background": "#121315",
+                        "secondary-container": "#1f477b",
+                        "outline": "#8e9198",
+                        "on-surface": "#e3e2e4",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "surface-dim": "#121315",
+                        "on-primary-fixed": "#021c36",
+                        "secondary": "#a7c8ff",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed": "#d2e4ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-gap": "0.75rem",
+                        "section-margin": "2.5rem",
+                        "glass-padding-x": "1.25rem",
+                        "container-padding": "1.5rem",
+                        "glass-padding-y": "1rem"
+                    },
+                    "fontFamily": {
+                        "slogan-display": ["Bebas Neue"],
+                        "slogan-display-mobile": ["Bebas Neue"],
+                        "link-description": ["Inter"],
+                        "name-badge": ["Plus Jakarta Sans"],
+                        "link-title": ["Inter"]
+                    },
+                    "fontSize": {
+                        "slogan-display": ["48px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "slogan-display-mobile": ["36px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "link-description": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "name-badge": ["14px", { "lineHeight": "20px", "letterSpacing": "0.15em", "fontWeight": "700" }],
+                        "link-title": ["16px", { "lineHeight": "24px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .icon-circle {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-[#153066] text-white min-h-screen font-link-description overflow-x-hidden relative">
+
+
+<main class="w-full max-w-[560px] mx-auto min-h-screen flex flex-col items-center pb-section-margin relative">
+<!-- Hero Section -->
+<div class="relative w-full h-[50vh] md:h-[60vh] shrink-0">
+<img class="w-full h-full object-cover" style="mask-image: linear-gradient(to bottom, black 60%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);" src="Saullo.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#153066] from-10% via-[#153066]/60 to-transparent"></div>
+</div>
+<!-- Profile Info -->
+<!-- Profile Info -->
+<div class="flex flex-col items-center -mt-28 z-10 px-container-padding w-full mb-4">
+    <!-- SAULLO VIANNA -->
+    <div class="text-[#e2ab34] font-semibold tracking-[0.4em] text-sm sm:text-base ml-2">
+        SAULLO VIANNA
+    </div>
+    
+    <!-- Divider with checkmark -->
+    <div class="flex items-center justify-center w-full max-w-[280px] my-1">
+        <div class="flex-grow h-[1.5px] bg-[#e2ab34]"></div>
+        <div class="mx-2 text-[#e2ab34] flex items-center justify-center bg-[#153066] rounded-full">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+        </div>
+        <div class="flex-grow h-[1.5px] bg-[#e2ab34]"></div>
+    </div>
+
+    <!-- DEPUTADO FEDERAL -->
+    <h1 class="flex flex-col items-center leading-[0.85] uppercase tracking-tighter w-full mt-1" style="font-family: 'Arial Black', Impact, sans-serif; font-weight: 900; transform: scaleY(1.15);">
+        <span class="text-[#f5f5f5] text-[3.1rem] sm:text-[3.8rem] drop-shadow-md">DEPUTADO</span>
+        <span class="text-[#e2ab34] text-[3.6rem] sm:text-[4.5rem] drop-shadow-md">FEDERAL</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <div class="text-white text-[0.65rem] sm:text-xs font-semibold tracking-[0.25em] mt-5 opacity-90 ml-1">
+        TRABALHO &bull; EXPERIÊNCIA &bull; RESULTADOS
+    </div>
+
+    <!-- Bottom Divider -->
+    <div class="w-full max-w-[240px] h-[1px] bg-[#e2ab34] mt-3 mb-2"></div>
+</div>
+<!-- Links Stack -->
+<div class="flex flex-col w-full px-container-padding gap-stack-gap mt-section-margin z-10">
+<!-- Instagram -->
+<a class="glass-panel rounded-full flex items-center p-2 relative group hover:bg-white/5 transition-colors" href="#">
+<div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] border-[1.5px] border-white/80">
+<i class="fab fa-instagram text-white text-3xl"></i>
+</div>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Instagram</span>
+<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
+</a>
+<!-- Facebook -->
+<a class="glass-panel rounded-full flex items-center p-2 relative group hover:bg-white/5 transition-colors" href="#">
+<div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-[#1877F2] border-[1.5px] border-white/80">
+<i class="fab fa-facebook-f text-white text-2xl"></i>
+</div>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Facebook</span>
+<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
+</a>
+<!-- Youtube -->
+<a class="glass-panel rounded-full flex items-center p-2 relative group hover:bg-white/5 transition-colors" href="#">
+<div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-[#FF0000] border-[1.5px] border-white/80">
+<i class="fab fa-youtube text-white text-2xl"></i>
+</div>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Youtube</span>
+<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
+</a>
+<!-- Bio -->
+<a class="glass-panel rounded-full flex items-center p-2 relative group hover:bg-white/5 transition-colors" href="#">
+<div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-[#10B981] border-[1.5px] border-white/80">
+<i class="fa-regular fa-user text-white text-[1.35rem]"></i>
+</div>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Bio</span>
+<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
+</a>
+<!-- Zap do Dudu -->
+<a class="glass-panel rounded-full flex items-center p-2 relative group hover:bg-white/5 transition-colors" href="#">
+<div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-[#25D366] border-[1.5px] border-white/80">
+<i class="fab fa-whatsapp text-white text-[1.7rem]"></i>
+</div>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Zap do Dudu</span>
+<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
+</a>
+<!-- Tiktok -->
+<a class="glass-panel rounded-full flex items-center p-2 relative group hover:bg-white/5 transition-colors" href="#">
+<div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-black border-[1.5px] border-white/80">
+<i class="fab fa-tiktok text-white text-2xl [text-shadow:-1.5px_-1.5px_0_#ff0050,1.5px_1.5px_0_#00f2fe]"></i>
+</div>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Tiktok</span>
+<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
+</a>
+<!-- Moldura Twibbon -->
+<a class="glass-panel rounded-full flex items-center p-2 relative group hover:bg-white/5 transition-colors" href="#">
+<div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-[#00D8D6] border-[1.5px] border-white/80">
+<div class="w-[20px] h-[20px] border-[3px] border-[#0A192F] rounded-[3px]"></div>
+</div>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Moldura Twibbon</span>
+<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
+</a>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-section-margin bg-transparent flat no shadows flex flex-col items-center gap-stack-gap w-full max-w-[560px] mx-auto px-container-padding font-link-description text-link-description">
+<!-- Social Grid Row -->
+<div class="flex justify-center gap-6 mb-4">
+<a class="text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<a class="text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">language</span>
+</a>
+</div>
+<!-- Links -->
+<div class="flex flex-wrap justify-center gap-4 text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Cookie Preferences</a>
+<a class="hover:text-primary transition-colors" href="#">Report</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+</div>
+
+</footer>
+</body></html>

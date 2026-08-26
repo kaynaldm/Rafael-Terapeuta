@@ -1,0 +1,14 @@
+{
+  "name": "stitch-modern-navy-social-hub",
+  "version": "1.0.0",
+  "description": "Creator Link in Bio",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -p 3000 .",
+    "dev": "live-server --port=3000 ."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}
