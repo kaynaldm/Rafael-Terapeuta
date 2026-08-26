@@ -97,12 +97,28 @@
         }
     </script>
 <style>
+        .fluid-bg {
+            background-color: #0c152b;
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(29, 78, 216, 0.75) 0%, transparent 45%),
+                radial-gradient(circle at 85% 75%, rgba(2, 132, 199, 0.7) 0%, transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.95) 0%, rgba(8, 17, 36, 1) 100%);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 560px 100%;
+        }
+        @media (max-width: 768px) {
+            .fluid-bg {
+                background-attachment: scroll;
+                background-size: cover;
+            }
+        }
         .glass-panel {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
         }
         .icon-circle {
             background: rgba(255, 255, 255, 0.2);
@@ -111,12 +127,12 @@
 </head>
 <body class="bg-[#0b0c10] text-white min-h-screen font-link-description overflow-x-hidden relative flex justify-center">
 
-<div class="w-full max-w-[560px] bg-[#153066] min-h-screen flex flex-col md:shadow-[0_0_80px_rgba(0,0,0,0.8)] relative">
+<div class="w-full max-w-[560px] fluid-bg min-h-screen flex flex-col md:shadow-[0_0_80px_rgba(0,0,0,0.8)] relative">
 <main class="w-full flex-grow flex flex-col items-center pb-section-margin relative">
 <!-- Hero Section -->
 <div class="relative w-full h-[50vh] md:h-[60vh] shrink-0">
 <img class="w-full h-full object-cover" style="mask-image: linear-gradient(to bottom, black 60%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);" src="Saullo.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-[#153066] from-10% via-[#153066]/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0c152b] from-10% via-[#0c152b]/60 to-transparent"></div>
 </div>
 <!-- Profile Info -->
 <!-- Profile Info -->
@@ -129,7 +145,7 @@
     <!-- Divider with checkmark -->
     <div class="flex items-center justify-center w-full max-w-[280px] my-1">
         <div class="flex-grow h-[1.5px] bg-[#e2ab34]"></div>
-        <div class="mx-2 text-[#e2ab34] flex items-center justify-center bg-[#153066] rounded-full">
+        <div class="mx-2 text-[#e2ab34] flex items-center justify-center bg-[#0c152b] rounded-full">
             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
             </svg>
