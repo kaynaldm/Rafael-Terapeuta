@@ -96,56 +96,8 @@
             },
         }
     </script>
-<style>
-        .fluid-bg {
-            background-color: #0f2354;
-            background-image: 
-                radial-gradient(circle at 15% 35%, rgba(37, 99, 235, 0.45) 0%, transparent 55%),
-                radial-gradient(circle at 85% 65%, rgba(29, 78, 216, 0.4) 0%, transparent 50%),
-                linear-gradient(135deg, #0a1738 0%, #132b66 50%, #0a1738 100%);
-            background-attachment: fixed;
-            background-position: center;
-            background-size: 480px 100%;
-        }
-        @media (max-width: 768px) {
-            .fluid-bg {
-                background-attachment: scroll;
-                background-size: cover;
-            }
-        }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.07);
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-        }
-        .icon-circle {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        html, body {
-            touch-action: pan-x pan-y;
-            overscroll-behavior-y: none;
-        }
-    </style>
-    <script>
-        document.addEventListener('gesturestart', function(e) {
-            e.preventDefault();
-        });
-        document.addEventListener('touchmove', function(e) {
-            if (e.touches.length > 1) {
-                e.preventDefault();
-            }
-        }, { passive: false });
-        let lastTouchEnd = 0;
-        document.addEventListener('touchend', function(e) {
-            let now = (new Date()).getTime();
-            if (now - lastTouchEnd <= 300) {
-                e.preventDefault();
-            }
-            lastTouchEnd = now;
-        }, false);
-    </script>
+<link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
 </head>
 <body class="bg-[#050b18] text-white min-h-screen font-link-description overflow-x-hidden relative flex justify-center select-none">
 
@@ -153,46 +105,46 @@
 <main class="w-full flex-grow flex flex-col items-center pb-section-margin relative">
 <!-- Hero Section -->
 <div class="relative w-full h-[40vh] md:h-[45vh] shrink-0">
-<img class="w-full h-full object-cover" style="mask-image: linear-gradient(to bottom, black 45%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 45%, transparent 100%);" src="Saullo.png"/>
+<img class="w-full h-full object-cover" style="mask-image: linear-gradient(to bottom, black 45%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 45%, transparent 100%);" src="assets/images/nova-foto.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-transparent via-[#132b66]/25 to-black/30"></div>
 </div>
 <!-- Profile Info -->
 <!-- Profile Info -->
 <div class="flex flex-col items-center -mt-20 z-10 px-container-padding w-full mb-4">
-    <!-- SAULLO VIANNA -->
-    <div class="text-[#e2ab34] font-semibold tracking-[0.4em] text-xs sm:text-sm ml-2">
-        SAULLO VIANNA
+    <!-- RAFAEL GUIMARÃES -->
+    <div class="text-[#e8b98b] font-semibold tracking-[0.3em] text-xs sm:text-sm ml-2">
+        RAFAEL GUIMARÃES
     </div>
     
-    <!-- Divider with checkmark -->
-    <div class="flex items-center justify-center w-full max-w-[240px] my-1">
-        <div class="flex-grow h-[1px] bg-[#e2ab34]/80"></div>
-        <div class="mx-2 text-[#e2ab34] flex items-center justify-center bg-[#132b66] rounded-full">
-            <svg class="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+    <!-- Divider with leaf -->
+    <div class="flex items-center justify-center w-full max-w-[240px] my-2">
+        <div class="flex-grow h-[1px] bg-[#e8b98b]/50"></div>
+        <div class="mx-3 text-[#e8b98b] flex items-center justify-center bg-[#2d1b2e] rounded-full p-1 border border-[#e8b98b]/30">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>
         </div>
-        <div class="flex-grow h-[1px] bg-[#e2ab34]/80"></div>
+        <div class="flex-grow h-[1px] bg-[#e8b98b]/50"></div>
     </div>
 
-    <!-- DEPUTADO FEDERAL -->
-    <h1 class="flex flex-col items-center leading-[0.85] uppercase tracking-tighter w-full mt-1" style="font-family: 'Arial Black', Impact, sans-serif; font-weight: 900;">
-        <span class="text-[#f5f5f5] text-[2.5rem] sm:text-[3rem] drop-shadow-md">DEPUTADO</span>
-        <span class="text-[#e2ab34] text-[3rem] sm:text-[3.6rem] drop-shadow-md">FEDERAL</span>
+    <!-- TERAPEUTA CLÍNICO -->
+    <h1 class="flex flex-col items-center leading-[1.1] uppercase tracking-wider w-full mt-2" style="font-family: 'Inter', sans-serif;">
+        <span class="text-[#f5f5f5] text-[2rem] sm:text-[2.2rem] font-light drop-shadow-md">TERAPEUTA</span>
+        <span class="text-[#e8b98b] text-[2.2rem] sm:text-[2.5rem] font-semibold drop-shadow-md">CLÍNICO</span>
     </h1>
 
     <!-- Subtitle -->
-    <div class="text-white text-[0.55rem] sm:text-[0.65rem] font-semibold tracking-[0.25em] mt-4 opacity-90 ml-1">
-        TRABALHO &bull; EXPERIÊNCIA &bull; RESULTADOS
+    <div class="text-white text-[0.55rem] sm:text-[0.65rem] font-normal tracking-[0.2em] mt-4 opacity-80 ml-1">
+        AUTOCONHECIMENTO &bull; BEM-ESTAR &bull; SAÚDE MENTAL
     </div>
 
     <!-- Bottom Divider -->
-    <div class="w-full max-w-[200px] h-[1px] bg-[#e2ab34]/80 mt-2.5 mb-1"></div>
+    <div class="w-full max-w-[200px] h-[1px] bg-[#e8b98b]/50 mt-3 mb-1"></div>
 </div>
 <!-- Links Stack -->
 <div class="flex flex-col w-full px-container-padding gap-3 mt-6 z-10">
 <!-- Instagram -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://www.instagram.com/saullovianna?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" target="_blank">
+<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://www.instagram.com/terapeutarafael_/" target="_blank">
 <div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] border-[1.5px] border-white/80">
 <i class="fab fa-instagram text-white text-2xl"></i>
 </div>
@@ -200,84 +152,54 @@
 <button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
 </a>
 <!-- Facebook -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://www.facebook.com/saulloviannaa" target="_blank">
+<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://www.facebook.com/share/18QR8CDTDm/" target="_blank">
 <div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-[#1877F2] border-[1.5px] border-white/80">
 <i class="fab fa-facebook-f text-white text-lg"></i>
 </div>
 <span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Facebook</span>
 <button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
 </a>
-<!-- Youtube -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://www.youtube.com/@SaulloVianna" target="_blank">
-<div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-[#FF0000] border-[1.5px] border-white/80">
-<i class="fab fa-youtube text-white text-lg"></i>
-</div>
-<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Youtube</span>
-<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
-</a>
-<!-- X -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://x.com/saullovianna" target="_blank">
-<div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-black border-[1.5px] border-white/80">
-<i class="fa-brands fa-x-twitter text-white text-lg"></i>
-</div>
-<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">X</span>
-<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
-</a>
-<!-- Zap do Dudu -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://whatsapp.com/channel/0029VaFSJ1UHQbS5drE9wu3f" target="_blank">
+
+<!-- WhatsApp -->
+<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael%21%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank">
 <div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-[#25D366] border-[1.5px] border-white/80">
 <i class="fab fa-whatsapp text-white text-2xl"></i>
 </div>
-<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Canal</span>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">WhatsApp</span>
 <button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
 </a>
-<!-- Tiktok -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://www.tiktok.com/@saullo.vianna" target="_blank">
-<div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-black border-[1.5px] border-white/80">
-<i class="fab fa-tiktok text-white text-lg [text-shadow:-1.5px_-1.5px_0_#ff0050,1.5px_1.5px_0_#00f2fe]"></i>
+
+<!-- Grupo do WhatsApp -->
+<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://chat.whatsapp.com/IXwdv5VETQn0ozt1UyRr47" target="_blank">
+<div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-[#128C7E] border-[1.5px] border-white/80">
+<i class="fa-solid fa-users text-white text-lg"></i>
 </div>
-<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Tiktok</span>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Grupo do WhatsApp</span>
 <button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
 </a>
-<!-- Moldura Twibbon -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://twb.nz/saullovianna" target="_blank">
-<div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-[#00D8D6] border-[1.5px] border-white/80">
-<div class="w-[18px] h-[18px] border-[2.5px] border-[#0A192F] rounded-[3px]"></div>
+
+<!-- Atendimento -->
+<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://share.google/in9xO0c7wlxgxEm2i" target="_blank">
+<div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-[#a67b5b] border-[1.5px] border-white/80">
+<i class="fa-solid fa-location-dot text-white text-lg"></i>
 </div>
-<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Moldura Twibbon</span>
+<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Local Presencial</span>
 <button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
 </a>
-<!-- Site Oficial -->
-<a class="glass-panel rounded-full flex items-center p-1.5 relative group hover:bg-white/5 transition-colors" href="https://www.saullovianna.com.br/" target="_blank">
-<div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-[#1D4ED8] border-[1.5px] border-white/80">
-<i class="fa-solid fa-globe text-white text-lg"></i>
-</div>
-<span class="absolute left-1/2 -translate-x-1/2 font-link-title text-link-title text-white">Site Oficial</span>
-<button class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:text-on-surface pr-4">more_vert</button>
-</a>
+
 </div>
 </main>
 <!-- Footer Component -->
 <footer class="w-full py-section-margin bg-transparent flat no shadows flex flex-col items-center gap-stack-gap px-container-padding font-link-description text-link-description mt-auto">
-<!-- Social Grid Row -->
-<div class="flex justify-center gap-6 mb-4">
-<a class="text-on-surface hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">photo_camera</span>
-</a>
-<a class="text-on-surface hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">chat</span>
-</a>
-<a class="text-on-surface hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">language</span>
-</a>
-</div>
-<!-- Links -->
-<div class="flex flex-wrap justify-center gap-4 text-on-surface-variant">
-<a class="hover:text-primary transition-colors" href="#">Cookie Preferences</a>
-<a class="hover:text-primary transition-colors" href="#">Report</a>
-<a class="hover:text-primary transition-colors" href="#">Privacy</a>
-</div>
-
+    <!-- Professional Message -->
+    <div class="flex flex-col items-center text-center text-[#e8b98b] opacity-80 gap-1 mb-2">
+        <span class="font-medium tracking-widest text-[0.65rem] uppercase">Atendimento Especializado</span>
+        <span class="text-white text-xs opacity-70">Terapia para desenvolvimento pessoal e emocional</span>
+    </div>
+    <!-- Copyright / Name -->
+    <div class="text-white/40 text-[10px] uppercase tracking-wider mt-2">
+        &copy; 2026 Rafael Guimarães. Todos os direitos reservados.
+    </div>
 </footer>
 </div>
 </body></html>

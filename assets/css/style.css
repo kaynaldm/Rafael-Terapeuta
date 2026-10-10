@@ -1,0 +1,30 @@
+.fluid-bg {
+    background-color: #1a151b;
+    background-image: 
+        radial-gradient(circle at 15% 35%, rgba(143, 91, 126, 0.3) 0%, transparent 55%),
+        radial-gradient(circle at 85% 65%, rgba(204, 137, 94, 0.25) 0%, transparent 50%),
+        linear-gradient(135deg, #100b12 0%, #2c1e2d 50%, #100b12 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 480px 100%;
+}
+@media (max-width: 768px) {
+    .fluid-bg {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+.glass-panel {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+.icon-circle {
+    background: rgba(255, 255, 255, 0.2);
+}
+html, body {
+    touch-action: pan-x pan-y;
+    overscroll-behavior-y: none;
+}
