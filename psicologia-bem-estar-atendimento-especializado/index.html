@@ -48,7 +48,7 @@
         <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-soft px-6 py-5 space-y-4">
             <a href="#sobre" class="block text-slate-700 font-medium hover:text-slate-900">Sobre</a>
             <a href="#servicos" class="block text-slate-700 font-medium hover:text-slate-900">Especialidades</a>
-            <a href="#pacotes" class="block text-slate-700 font-medium hover:text-slate-900">Pacotes & Valores</a>
+            <a href="#pacotes" class="block text-slate-700 font-medium hover:text-slate-900">Pacotes & Atendimento</a>
             <a href="#depoimentos" class="block text-slate-700 font-medium hover:text-slate-900">Depoimentos</a>
             <a href="../index.html" class="flex items-center gap-2 text-slate-600 font-medium">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar aos Links
@@ -216,10 +216,10 @@
         <div class="max-w-6xl mx-auto">
             <!-- Header -->
             <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
-                <div class="inline-block text-xs font-semibold uppercase tracking-[0.2em] accent-gold">Investimento Consciente</div>
-                <h2 class="text-3xl sm:text-4xl text-slate-900">Pacotes de <span class="italic text-[#1F385C]">Atendimento Terapêutico</span></h2>
+                <div class="inline-block text-xs font-semibold uppercase tracking-[0.2em] accent-gold">Investimento no seu Bem-Estar</div>
+                <h2 class="text-3xl sm:text-4xl text-slate-900">Modalidades de <span class="italic text-[#1F385C]">Atendimento Terapêutico</span></h2>
                 <p class="text-muted text-sm sm:text-base leading-relaxed">
-                    Planos estruturados para oferecer o acolhimento, a constância e o suporte necessários para sua transformação emocional.
+                    Escolha o formato ideal para o seu momento e confirme os valores e horários disponíveis diretamente com o terapeuta.
                 </p>
             </div>
 
@@ -236,9 +236,9 @@
                         Passagem Franca
                     </button>
                 </div>
-                <p class="text-xs text-slate-500 font-medium flex items-center justify-center gap-1.5 mt-3">
-                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#C58B58]"></i>
-                    Valores para atendimento em: <span id="cityNameDisplay" class="font-semibold text-slate-800">São Luís — Maranhão</span>
+                <p class="text-xs text-slate-500 font-medium flex items-center justify-center gap-1.5 mt-3 text-center px-4">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#C58B58] shrink-0"></i>
+                    <span>Cidade selecionada: <strong id="cityNameDisplay" class="text-slate-800">São Luís — Maranhão</strong></span>
                 </p>
             </div>
 
@@ -249,22 +249,20 @@
                     <div>
                         <div class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 mb-2">Consulta Individual</div>
                         <h3 class="text-2xl font-serif text-slate-900 mb-2">Sessão Avulsa</h3>
-                        <p class="text-muted text-xs sm:text-sm leading-relaxed mb-6">Ideal para uma avaliação inicial, alinhamento ou acolhimento pontual.</p>
+                        <p class="text-muted text-xs sm:text-sm leading-relaxed mb-6">Ideal para uma avaliação inicial, acolhimento pontual ou alinhamento de objetivos.</p>
                         
                         <div class="py-4 border-y border-soft mb-6">
-                            <div class="flex items-baseline gap-1">
-                                <span class="text-sm font-medium text-slate-500">R$</span>
-                                <span id="priceSingle" class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-slate-900 transition-all duration-300">300</span>
-                                <span class="text-slate-500 text-sm">,00</span>
-                                <span class="text-xs text-slate-400 ml-1">/ sessão</span>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-slate-900">Valores sob Consulta</div>
+                            <div class="text-xs text-slate-500 mt-1.5 flex items-center gap-1.5">
+                                <i data-lucide="info" class="w-3.5 h-3.5 text-[#C58B58] shrink-0"></i>
+                                <span>Condições personalizadas por cidade e modalidade</span>
                             </div>
-                            <div class="text-xs text-slate-500 mt-1">1 atendimento terapêutico individual</div>
                         </div>
 
                         <ul class="space-y-3 text-xs sm:text-sm text-slate-600 mb-8">
                             <li class="flex items-center gap-2.5">
                                 <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
-                                <span>1 sessão individual de acompanhamento</span>
+                                <span>1 sessão individual de atendimento</span>
                             </li>
                             <li class="flex items-center gap-2.5">
                                 <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
@@ -272,18 +270,18 @@
                             </li>
                             <li class="flex items-center gap-2.5">
                                 <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
-                                <span>Escuta acolhedora focada na sua queixa</span>
+                                <span>Escuta acolhedora focada na sua demanda</span>
                             </li>
                             <li class="flex items-center gap-2.5">
                                 <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
-                                <span>Clareza sobre seus primeiros passos</span>
+                                <span>Direcionamento para seus primeiros passos</span>
                             </li>
                         </ul>
                     </div>
 
-                    <a id="btnSingle" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20agendar%20uma%20*Sess%C3%A3o%20Avulsa*%20para%20atendimento%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-3.5 px-4 rounded-xl sm:rounded-2xl border-2 border-[#1F385C] text-[#1F385C] hover:bg-[#1F385C] hover:text-white text-center font-semibold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-sm leading-snug">
-                        <i data-lucide="calendar" class="w-4 h-4 shrink-0"></i>
-                        <span>Agendar Sessão Avulsa</span>
+                    <a id="btnSingle" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20consultar%20os%20valores%20e%20disponibilidade%20para%20a%20*Sess%C3%A3o%20Avulsa*%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-3.5 px-4 rounded-xl sm:rounded-2xl border-2 border-[#1F385C] text-[#1F385C] hover:bg-[#1F385C] hover:text-white text-center font-semibold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-sm leading-snug">
+                        <i data-lucide="message-circle" class="w-4 h-4 shrink-0"></i>
+                        <span>Consultar Valor no WhatsApp</span>
                     </a>
                 </div>
 
@@ -301,17 +299,12 @@
                         <p class="text-muted text-xs sm:text-sm leading-relaxed mb-6">A frequência e consistência necessárias para transformações profundas e duradouras.</p>
                         
                         <div class="py-4 border-y border-soft mb-6 bg-slate-50/70 -mx-6 sm:-mx-8 md:-mx-10 px-6 sm:px-8 md:px-10 rounded-xl">
-                            <div class="flex items-baseline gap-1">
-                                <span class="text-sm font-medium text-slate-500">R$</span>
-                                <span id="pricePerSession" class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#1F385C] transition-all duration-300">250</span>
-                                <span class="text-slate-500 text-sm">,00</span>
-                                <span class="text-xs text-slate-500 font-medium ml-1">/ por sessão</span>
-                            </div>
+                            <div class="text-2xl sm:text-3xl font-serif font-bold text-[#1F385C]">Condição Especial</div>
                             <div class="flex flex-wrap items-center justify-between gap-2 mt-2">
-                                <span class="text-xs font-semibold text-slate-700">Total: R$ <span id="pricePackageTotal">1.000</span>,00</span>
+                                <span class="text-xs font-semibold text-slate-700">4 sessões com valor diferenciado</span>
                                 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-semibold border border-emerald-200">
                                     <i data-lucide="sparkles" class="w-3 h-3 text-emerald-600"></i>
-                                    Economia de R$ <span id="priceSavings">200</span>,00
+                                    Economia no Pacote
                                 </span>
                             </div>
                         </div>
@@ -331,7 +324,7 @@
                             </li>
                             <li class="flex items-center gap-2.5">
                                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
-                                <span>Acompanhamento da evolução emocional</span>
+                                <span>Acompanhamento contínuo da evolução</span>
                             </li>
                             <li class="flex items-center gap-2.5">
                                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
@@ -340,9 +333,9 @@
                         </ul>
                     </div>
 
-                    <a id="btnPackage" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20agendar%20o%20*Pacote%20de%20Acompanhamento%20(4%20sess%C3%B5es)*%20para%20atendimento%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-3.5 px-4 rounded-xl sm:rounded-2xl accent-deep text-white hover:opacity-95 text-center font-semibold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-lg leading-snug">
-                        <i data-lucide="sparkles" class="w-4 h-4 text-[#E8B98B] shrink-0"></i>
-                        <span>Agendar Pacote de Acompanhamento</span>
+                    <a id="btnPackage" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20consultar%20os%20valores%20e%20condi%C3%A7%C3%B5es%20do%20*Pacote%20de%20Acompanhamento%20(4%20sess%C3%B5es)*%20para%20atendimento%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-3.5 px-4 rounded-xl sm:rounded-2xl accent-deep text-white hover:opacity-95 text-center font-semibold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-lg leading-snug">
+                        <i data-lucide="message-circle" class="w-4 h-4 text-[#E8B98B] shrink-0"></i>
+                        <span>Consultar Pacote no WhatsApp</span>
                     </a>
                 </div>
             </div>
@@ -460,55 +453,34 @@
             });
         }
 
-        // Packages & City Selector Pricing Logic
-        const pricingData = {
+        // City Selector Logic -> Custom WhatsApp consultation by city and modality
+        const cityData = {
             saoluis: {
                 name: 'São Luís — Maranhão',
-                shortName: 'São Luís',
-                single: '300',
-                perSession: '250',
-                total: '1.000',
-                savings: '200'
+                shortName: 'São Luís'
             },
             lagoadomato: {
                 name: 'Lagoa do Mato — Maranhão',
-                shortName: 'Lagoa do Mato',
-                single: '180',
-                perSession: '150',
-                total: '600',
-                savings: '120'
+                shortName: 'Lagoa do Mato'
             },
             passagemfranca: {
                 name: 'Passagem Franca — Maranhão',
-                shortName: 'Passagem Franca',
-                single: '180',
-                perSession: '150',
-                total: '600',
-                savings: '120'
+                shortName: 'Passagem Franca'
             }
         };
 
         function updatePricing(cityKey) {
-            const data = pricingData[cityKey];
+            const data = cityData[cityKey];
             if (!data) return;
 
-            const elSingle = document.getElementById('priceSingle');
-            const elPerSession = document.getElementById('pricePerSession');
-            const elTotal = document.getElementById('pricePackageTotal');
-            const elSavings = document.getElementById('priceSavings');
             const elCityName = document.getElementById('cityNameDisplay');
-
-            if (elSingle) elSingle.textContent = data.single;
-            if (elPerSession) elPerSession.textContent = data.perSession;
-            if (elTotal) elTotal.textContent = data.total;
-            if (elSavings) elSavings.textContent = data.savings;
             if (elCityName) elCityName.textContent = data.name;
 
             const btnSingle = document.getElementById('btnSingle');
             const btnPackage = document.getElementById('btnPackage');
 
-            const textSingle = `Olá, Rafael! Gostaria de agendar uma *Sessão Avulsa* para atendimento em *${data.shortName}*.`;
-            const textPackage = `Olá, Rafael! Gostaria de agendar o *Pacote de Acompanhamento (4 sessões)* para atendimento em *${data.shortName}*.`;
+            const textSingle = `Olá, Rafael! Gostaria de consultar os valores e disponibilidade para a *Sessão Avulsa* em *${data.shortName}*.`;
+            const textPackage = `Olá, Rafael! Gostaria de consultar os valores e condições do *Pacote de Acompanhamento (4 sessões)* para atendimento em *${data.shortName}*.`;
 
             if (btnSingle) {
                 btnSingle.href = `https://wa.me/559885547028?text=` + encodeURIComponent(textSingle);
