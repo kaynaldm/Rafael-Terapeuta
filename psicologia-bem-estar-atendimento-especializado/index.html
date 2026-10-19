@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Guimarães | Terapeuta Clínico - Atendimento Especializado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .bg-canvas { background-color: #FDFCFB; }
+        .text-muted { color: #6B7280; }
+        .accent-soft { background-color: #F4EBE2; }
+        .accent-deep { background-color: #1F385C; }
+        .accent-gold { color: #C58B58; }
+        .border-soft { border-color: #E5E7EB; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-canvas text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-canvas/90 backdrop-blur-md border-b border-soft">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex flex-col">
+                <span class="text-xl font-semibold tracking-tight serif text-slate-900">Rafael Guimarães</span>
+                <span class="text-[11px] uppercase tracking-[0.2em] font-medium accent-gold">Terapeuta Clínico</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#sobre" class="hover:text-slate-900 transition-colors">Sobre</a>
+                <a href="#servicos" class="hover:text-slate-900 transition-colors">Especialidades</a>
+                <a href="#depoimentos" class="hover:text-slate-900 transition-colors">Depoimentos</a>
+                <a href="../index.html" class="flex items-center gap-1.5 text-slate-500 hover:text-slate-900 transition-colors">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar aos Links
+                </a>
+                <a href="#agendamento" class="px-5 py-2.5 rounded-full accent-deep text-white hover:opacity-90 transition-all shadow-md">Agendar Consulta</a>
+            </div>
+            <button id="menuBtn" class="md:hidden p-2 text-slate-700 hover:text-slate-900 focus:outline-none" aria-label="Abrir Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-soft px-6 py-5 space-y-4">
+            <a href="#sobre" class="block text-slate-700 font-medium hover:text-slate-900">Sobre</a>
+            <a href="#servicos" class="block text-slate-700 font-medium hover:text-slate-900">Especialidades</a>
+            <a href="#depoimentos" class="block text-slate-700 font-medium hover:text-slate-900">Depoimentos</a>
+            <a href="../index.html" class="flex items-center gap-2 text-slate-600 font-medium">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar aos Links
+            </a>
+            <a href="#agendamento" class="block text-center px-5 py-2.5 rounded-full accent-deep text-white font-medium">Agendar Consulta</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl leading-tight text-slate-900">
+                    Um espaço seguro para <span class="italic text-[#1F385C]">reencontrar</span> seu equilíbrio.
+                </h1>
+                <p class="text-lg text-muted leading-relaxed max-w-md">
+                    Acompanhamento terapêutico especializado com foco em autoconhecimento, bem-estar emocional e manejo da ansiedade através de uma abordagem humanizada e acolhedora.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#agendamento" class="px-8 py-4 rounded-full accent-deep text-white text-center font-medium hover:shadow-lg transition-all">
+                        Iniciar Processo Terapêutico
+                    </a>
+                    <a href="#servicos" class="px-8 py-4 rounded-full border border-soft text-center font-medium hover:bg-slate-50 transition-all">
+                        Conhecer Especialidades
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-t from-[#0b1424] to-[#1e3458] border border-slate-200">
+                    <img src="../assets/images/nova-foto.png" alt="Rafael Guimarães - Terapeuta Clínico" class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-24 bg-white border-y border-soft">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1">
+                <div class="aspect-square rounded-3xl overflow-hidden shadow-lg border border-soft">
+                    <img src="../assets/images/sala-aconchegante.png" alt="Sala aconchegante com poltronas e plantas" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="order-1 md:order-2 space-y-6">
+                <div class="inline-block text-xs font-semibold uppercase tracking-[0.2em] accent-gold">Sobre o Terapeuta</div>
+                <h2 class="text-4xl leading-tight text-slate-900">Acolhimento baseado na <span class="italic text-[#1F385C]">empatia</span> e desenvolvimento pessoal.</h2>
+                <p class="text-muted leading-relaxed">
+                    Acredito que a terapia não se resume apenas a aliviar sintomas, mas na construção profunda de uma vida com mais sentido, serenidade e inteligência emocional. Minha prática clínica é pautada no respeito absoluto ao tempo e à história de cada indivíduo.
+                </p>
+                <p class="text-muted leading-relaxed">
+                    Com foco terapêutico humanizado e integrativo, ofereço ferramentas práticas para que você consiga identificar padrões limitantes, superar bloqueios emocionais e viver com mais leveza no seu dia a dia.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="flex items-start gap-3">
+                        <div class="p-2.5 rounded-xl accent-soft text-[#8C5D35]"><i data-lucide="heart-handshake" class="w-5 h-5"></i></div>
+                        <div>
+                            <div class="font-medium text-sm text-slate-800">Espaço Seguro</div>
+                            <div class="text-xs text-muted">Sigilo &amp; Acolhimento</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2.5 rounded-xl accent-soft text-[#8C5D35]"><i data-lucide="sparkles" class="w-5 h-5"></i></div>
+                        <div>
+                            <div class="font-medium text-sm text-slate-800">Autonomia</div>
+                            <div class="text-xs text-muted">Desenvolvimento Pessoal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-block text-xs font-semibold uppercase tracking-[0.2em] accent-gold">Áreas de Atuação</div>
+                <h2 class="text-4xl text-slate-900">Especialidades Terapêuticas</h2>
+                <p class="text-muted">Cada pessoa vivencia desafios de forma singular. A abordagem é adaptada para acolher com precisão a fase de vida em que você se encontra.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-3xl border border-soft bg-white hover:border-[#1F385C]/30 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-2xl accent-soft flex items-center justify-center text-[#8C5D35] mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="wind" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl mb-3 text-slate-900">Ansiedade e Estresse</h3>
+                    <p class="text-muted text-sm leading-relaxed mb-6">Técnicas de regulação emocional, controle da agitação mental e manejo de crises para recuperar a serenidade na rotina.</p>
+                    <ul class="text-xs space-y-2 text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C58B58]"></i> Crises de Ansiedade</li>
+                        <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C58B58]"></i> Sobrecarga Emocional e Burnout</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 rounded-3xl border border-soft bg-white hover:border-[#1F385C]/30 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-2xl accent-soft flex items-center justify-center text-[#8C5D35] mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="heart" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl mb-3 text-slate-900">Relacionamentos</h3>
+                    <p class="text-muted text-sm leading-relaxed mb-6">Compreensão de vínculos afetivos, dependência emocional, superação de rupturas e construção de limites saudáveis.</p>
+                    <ul class="text-xs space-y-2 text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C58B58]"></i> Comunicação Assertiva</li>
+                        <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C58B58]"></i> Conflitos &amp; Fases de Transição</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 rounded-3xl border border-soft bg-white hover:border-[#1F385C]/30 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-2xl accent-soft flex items-center justify-center text-[#8C5D35] mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl mb-3 text-slate-900">Autoconhecimento</h3>
+                    <p class="text-muted text-sm leading-relaxed mb-6">Fortalecimento da autoestima, clareza sobre suas escolhas e conexão com seus propósitos essenciais.</p>
+                    <ul class="text-xs space-y-2 text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C58B58]"></i> Autoestima &amp; Segurança</li>
+                        <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3 text-[#C58B58]"></i> Desenvolvimento Pessoal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="depoimentos" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl border border-soft">
+                        <img src="../assets/images/terapeuta-escritorio.png" alt="Terapeuta Sorridente em Escritório Aconchegante" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-[#F4EBE2] rounded-full -z-10"></div>
+                </div>
+                <div class="space-y-10">
+                    <h2 class="text-4xl text-slate-900">Relatos de <span class="italic text-[#1F385C]">Transformação</span></h2>
+                    <div class="space-y-6">
+                        <div class="p-6 rounded-2xl bg-white border border-soft shadow-sm">
+                            <div class="flex gap-1 text-amber-400 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-600 italic mb-4">"O Rafael possui uma capacidade de acolhimento e escuta que me surpreendeu positivamente. Cada sessão me trouxe clareza e ferramentas reais para lidar com o dia a dia."</p>
+                            <div class="font-medium text-sm text-slate-800">— Mariana S., 32 anos</div>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-white border border-soft shadow-sm">
+                            <div class="flex gap-1 text-amber-400 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-600 italic mb-4">"O processo terapêutico me ajudou a identificar gatilhos de ansiedade que antes pareciam incontroláveis. Hoje sinto muito mais controle e serenidade."</p>
+                            <div class="font-medium text-sm text-slate-800">— Ricardo M., 45 anos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="agendamento" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-[3rem] border border-soft shadow-2xl overflow-hidden grid md:grid-cols-5">
+            <div class="md:col-span-2 accent-deep p-10 sm:p-12 text-white flex flex-col justify-between">
+                <div>
+                    <div class="text-xs uppercase tracking-widest text-[#E8B98B] font-semibold mb-2">Agendamento</div>
+                    <h2 class="text-3xl mb-6 font-serif">Vamos conversar?</h2>
+                    <p class="text-slate-200/90 text-sm leading-relaxed mb-8">
+                        O primeiro passo em direção ao seu bem-estar começa com uma conversa. Estou aqui para caminhar ao seu lado.
+                    </p>
+                </div>
+                <div class="space-y-4 pt-6 border-t border-white/10">
+                    <a href="https://wa.me/559885547028" target="_blank" class="flex items-center gap-3 text-sm text-slate-200 hover:text-white transition-colors">
+                        <i data-lucide="phone" class="w-4 h-4 text-[#E8B98B]"></i>
+                        (98) 98554-7028
+                    </a>
+                    <a href="https://www.instagram.com/terapeutarafael_/" target="_blank" class="flex items-center gap-3 text-sm text-slate-200 hover:text-white transition-colors">
+                        <i data-lucide="instagram" class="w-4 h-4 text-[#E8B98B]"></i>
+                        @terapeutarafael_
+                    </a>
+                    <a href="https://share.google/in9xO0c7wlxgxEm2i" target="_blank" class="flex items-center gap-3 text-sm text-slate-200 hover:text-white transition-colors">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-[#E8B98B]"></i>
+                        Atendimento Presencial &amp; Online
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-3 p-10 sm:p-12">
+                <form id="bookingForm" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-medium text-slate-500 uppercase tracking-wider">Nome Completo</label>
+                            <input id="inputName" type="text" required class="w-full px-4 py-3 rounded-xl border border-soft focus:ring-2 focus:ring-[#1F385C] outline-none transition-all" placeholder="Seu nome">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-medium text-slate-500 uppercase tracking-wider">Preferência de Horário</label>
+                            <select id="inputTime" class="w-full px-4 py-3 rounded-xl border border-soft focus:ring-2 focus:ring-[#1F385C] outline-none transition-all bg-white">
+                                <option>Manhã (08:00 - 12:00)</option>
+                                <option>Tarde (13:00 - 18:00)</option>
+                                <option>Noite (18:00 - 21:00)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-medium text-slate-500 uppercase tracking-wider">Mensagem (Opcional)</label>
+                        <textarea id="inputMsg" rows="3" class="w-full px-4 py-3 rounded-xl border border-soft focus:ring-2 focus:ring-[#1F385C] outline-none transition-all" placeholder="Conte-me brevemente o motivo da sua busca..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl accent-deep text-white font-medium hover:opacity-95 transition-all shadow-lg flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Enviar via WhatsApp
+                    </button>
+                </form>
+                <div id="successMsg" class="hidden text-center py-12 space-y-4">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
+                        <i data-lucide="check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl text-slate-900 font-serif">Solicitação Encaminhada!</h3>
+                    <p class="text-muted text-sm max-w-sm mx-auto">Se a conversa não abriu automaticamente no WhatsApp, clique no botão abaixo:</p>
+                    <a id="btnOpenWa" href="#" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full accent-deep text-white font-medium hover:opacity-95 transition-all shadow-md mt-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Continuar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-soft text-center px-6 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-left">
+                <div class="serif text-lg font-semibold text-slate-900">Rafael Guimarães</div>
+                <div class="text-xs accent-gold font-medium uppercase tracking-wider">Terapeuta Clínico</div>
+            </div>
+            <div class="text-xs text-muted">
+                &copy; 2026 Rafael Guimarães. Todos os direitos reservados.
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="https://www.instagram.com/terapeutarafael_/" target="_blank" class="text-slate-400 hover:text-[#C58B58] transition-colors" title="Instagram">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+                <a href="https://www.facebook.com/share/18QR8CDTDm/" target="_blank" class="text-slate-400 hover:text-[#C58B58] transition-colors" title="Facebook">
+                    <i data-lucide="facebook" class="w-5 h-5"></i>
+                </a>
+                <a href="https://wa.me/559885547028" target="_blank" class="text-slate-400 hover:text-[#C58B58] transition-colors" title="WhatsApp">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                </a>
+                <a href="../index.html" class="text-xs text-slate-500 hover:text-slate-800 font-medium underline transition-colors">
+                    Voltar aos Links
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // Close mobile menu when clicking a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Form Handling -> Redirects to WhatsApp with clean formatted message
+        const form = document.getElementById('bookingForm');
+        const success = document.getElementById('successMsg');
+        const btnOpenWa = document.getElementById('btnOpenWa');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('inputName').value.trim();
+            const time = document.getElementById('inputTime').value;
+            const msg = document.getElementById('inputMsg').value.trim();
+
+            let lines = [
+                `Olá, Rafael! Gostaria de agendar um atendimento terapêutico.`,
+                ``,
+                `*Nome:* ${name}`,
+                `*Preferência de Horário:* ${time}`
+            ];
+            if (msg) {
+                lines.push(`*Mensagem:* ${msg}`);
+            }
+
+            const text = lines.join('\n');
+            const waUrl = `https://wa.me/559885547028?text=` + encodeURIComponent(text);
+
+            if (btnOpenWa) {
+                btnOpenWa.href = waUrl;
+            }
+
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+
+            window.open(waUrl, '_blank') || (window.location.href = waUrl);
+        });
+    </script>
+</body>
+</html>
