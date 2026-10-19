@@ -67,11 +67,11 @@
                 <p class="text-lg text-muted leading-relaxed max-w-md">
                     Acompanhamento terapêutico especializado com foco em autoconhecimento, bem-estar emocional e manejo da ansiedade através de uma abordagem humanizada e acolhedora.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#agendamento" class="px-8 py-4 rounded-full accent-deep text-white text-center font-medium hover:shadow-lg transition-all">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                    <a href="#agendamento" class="w-full sm:w-auto px-6 py-3.5 sm:px-8 sm:py-4 rounded-full accent-deep text-white text-center font-medium text-sm sm:text-base hover:shadow-lg transition-all leading-snug">
                         Iniciar Processo Terapêutico
                     </a>
-                    <a href="#servicos" class="px-8 py-4 rounded-full border border-soft text-center font-medium hover:bg-slate-50 transition-all">
+                    <a href="#servicos" class="w-full sm:w-auto px-6 py-3.5 sm:px-8 sm:py-4 rounded-full border border-soft text-center font-medium text-sm sm:text-base hover:bg-slate-50 transition-all leading-snug">
                         Conhecer Especialidades
                     </a>
                 </div>
@@ -224,28 +224,28 @@
             </div>
 
             <!-- City Selector -->
-            <div class="flex flex-col items-center mb-14">
-                <div class="inline-flex p-1.5 bg-slate-100/90 rounded-full border border-soft gap-1 shadow-inner max-w-full overflow-x-auto">
-                    <button type="button" data-city="saoluis" class="city-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all shadow-sm bg-[#1F385C] text-white">
+            <div class="flex flex-col items-center mb-10 sm:mb-14">
+                <div class="inline-flex p-1 bg-slate-100/90 rounded-full border border-soft gap-1 shadow-inner max-w-full overflow-x-auto">
+                    <button type="button" data-city="saoluis" class="city-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all shadow-sm bg-[#1F385C] text-white whitespace-nowrap">
                         São Luís
                     </button>
-                    <button type="button" data-city="lagoadomato" class="city-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900 bg-transparent">
+                    <button type="button" data-city="lagoadomato" class="city-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900 bg-transparent whitespace-nowrap">
                         Lagoa do Mato
                     </button>
-                    <button type="button" data-city="passagemfranca" class="city-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900 bg-transparent">
+                    <button type="button" data-city="passagemfranca" class="city-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900 bg-transparent whitespace-nowrap">
                         Passagem Franca
                     </button>
                 </div>
-                <p class="text-xs text-slate-500 font-medium flex items-center justify-center gap-1.5 mt-3.5">
+                <p class="text-xs text-slate-500 font-medium flex items-center justify-center gap-1.5 mt-3">
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#C58B58]"></i>
                     Valores para atendimento em: <span id="cityNameDisplay" class="font-semibold text-slate-800">São Luís — Maranhão</span>
                 </p>
             </div>
 
             <!-- Pricing Cards Grid -->
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-stretch">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8 items-stretch">
                 <!-- Card 1: Sessão Avulsa -->
-                <div class="p-8 sm:p-10 rounded-[2.5rem] border border-soft bg-white flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+                <div class="p-6 sm:p-8 md:p-10 rounded-3xl border border-soft bg-white flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
                     <div>
                         <div class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 mb-2">Consulta Individual</div>
                         <h3 class="text-2xl font-serif text-slate-900 mb-2">Sessão Avulsa</h3>
@@ -254,14 +254,14 @@
                         <div class="py-4 border-y border-soft mb-6">
                             <div class="flex items-baseline gap-1">
                                 <span class="text-sm font-medium text-slate-500">R$</span>
-                                <span id="priceSingle" class="text-4xl sm:text-5xl font-serif font-bold text-slate-900 transition-all duration-300">300</span>
+                                <span id="priceSingle" class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-slate-900 transition-all duration-300">300</span>
                                 <span class="text-slate-500 text-sm">,00</span>
                                 <span class="text-xs text-slate-400 ml-1">/ sessão</span>
                             </div>
                             <div class="text-xs text-slate-500 mt-1">1 atendimento terapêutico individual</div>
                         </div>
 
-                        <ul class="space-y-3.5 text-xs sm:text-sm text-slate-600 mb-8">
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 mb-8">
                             <li class="flex items-center gap-2.5">
                                 <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
                                 <span>1 sessão individual de acompanhamento</span>
@@ -281,17 +281,17 @@
                         </ul>
                     </div>
 
-                    <a id="btnSingle" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20agendar%20uma%20*Sess%C3%A3o%20Avulsa*%20para%20atendimento%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-4 rounded-2xl border-2 border-[#1F385C] text-[#1F385C] hover:bg-[#1F385C] hover:text-white text-center font-semibold text-sm transition-all flex items-center justify-center gap-2 shadow-sm">
-                        <i data-lucide="calendar" class="w-4 h-4"></i>
-                        Agendar Sessão Avulsa
+                    <a id="btnSingle" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20agendar%20uma%20*Sess%C3%A3o%20Avulsa*%20para%20atendimento%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-3.5 px-4 rounded-xl sm:rounded-2xl border-2 border-[#1F385C] text-[#1F385C] hover:bg-[#1F385C] hover:text-white text-center font-semibold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-sm leading-snug">
+                        <i data-lucide="calendar" class="w-4 h-4 shrink-0"></i>
+                        <span>Agendar Sessão Avulsa</span>
                     </a>
                 </div>
 
                 <!-- Card 2: Pacote de Acompanhamento (Featured) -->
-                <div class="p-8 sm:p-10 rounded-[2.5rem] border-2 border-[#1F385C] bg-white flex flex-col justify-between shadow-2xl relative">
+                <div class="p-6 sm:p-8 md:p-10 rounded-3xl border-2 border-[#1F385C] bg-white flex flex-col justify-between shadow-2xl relative mt-2 sm:mt-0">
                     <!-- Highlight Badge -->
-                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1F385C] text-[#E8B98B] px-4 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase shadow-md flex items-center gap-1.5 whitespace-nowrap">
-                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current text-[#E8B98B]"></i>
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1F385C] text-[#E8B98B] px-3.5 py-1 rounded-full text-[10px] sm:text-[11px] font-bold tracking-wider uppercase shadow-md flex items-center gap-1.5 whitespace-nowrap">
+                        <i data-lucide="star" class="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current text-[#E8B98B]"></i>
                         Mais Recomendado
                     </div>
 
@@ -300,23 +300,23 @@
                         <h3 class="text-2xl font-serif text-slate-900 mb-2">Pacote de Acompanhamento</h3>
                         <p class="text-muted text-xs sm:text-sm leading-relaxed mb-6">A frequência e consistência necessárias para transformações profundas e duradouras.</p>
                         
-                        <div class="py-4 border-y border-soft mb-6 bg-slate-50/70 -mx-8 sm:-mx-10 px-8 sm:px-10 rounded-xl">
+                        <div class="py-4 border-y border-soft mb-6 bg-slate-50/70 -mx-6 sm:-mx-8 md:-mx-10 px-6 sm:px-8 md:px-10 rounded-xl">
                             <div class="flex items-baseline gap-1">
                                 <span class="text-sm font-medium text-slate-500">R$</span>
-                                <span id="pricePerSession" class="text-4xl sm:text-5xl font-serif font-bold text-[#1F385C] transition-all duration-300">250</span>
+                                <span id="pricePerSession" class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#1F385C] transition-all duration-300">250</span>
                                 <span class="text-slate-500 text-sm">,00</span>
                                 <span class="text-xs text-slate-500 font-medium ml-1">/ por sessão</span>
                             </div>
                             <div class="flex flex-wrap items-center justify-between gap-2 mt-2">
                                 <span class="text-xs font-semibold text-slate-700">Total: R$ <span id="pricePackageTotal">1.000</span>,00</span>
-                                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold border border-emerald-200">
+                                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-semibold border border-emerald-200">
                                     <i data-lucide="sparkles" class="w-3 h-3 text-emerald-600"></i>
                                     Economia de R$ <span id="priceSavings">200</span>,00
                                 </span>
                             </div>
                         </div>
 
-                        <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 mb-8">
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-700 mb-8">
                             <li class="flex items-center gap-2.5 font-medium">
                                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
                                 <span>4 sessões terapêuticas individuais</span>
@@ -340,9 +340,9 @@
                         </ul>
                     </div>
 
-                    <a id="btnPackage" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20agendar%20o%20*Pacote%20de%20Acompanhamento%20(4%20sess%C3%B5es)*%20para%20atendimento%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-4 rounded-2xl accent-deep text-white hover:opacity-95 text-center font-semibold text-sm transition-all flex items-center justify-center gap-2 shadow-lg">
-                        <i data-lucide="sparkles" class="w-4 h-4 text-[#E8B98B]"></i>
-                        Agendar Pacote de Acompanhamento
+                    <a id="btnPackage" href="https://wa.me/559885547028?text=Ol%C3%A1%2C%20Rafael!%20Gostaria%20de%20agendar%20o%20*Pacote%20de%20Acompanhamento%20(4%20sess%C3%B5es)*%20para%20atendimento%20em%20*S%C3%A3o%20Lu%C3%ADs*." target="_blank" class="w-full py-3.5 px-4 rounded-xl sm:rounded-2xl accent-deep text-white hover:opacity-95 text-center font-semibold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-lg leading-snug">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-[#E8B98B] shrink-0"></i>
+                        <span>Agendar Pacote de Acompanhamento</span>
                     </a>
                 </div>
             </div>
@@ -395,9 +395,9 @@
                         <label class="text-xs font-medium text-slate-500 uppercase tracking-wider">Mensagem (Opcional)</label>
                         <textarea id="inputMsg" rows="3" class="w-full px-4 py-3 rounded-xl border border-soft focus:ring-2 focus:ring-[#1F385C] outline-none transition-all" placeholder="Conte-me brevemente o motivo da sua busca..."></textarea>
                     </div>
-                    <button type="submit" class="w-full py-4 rounded-xl accent-deep text-white font-medium hover:opacity-95 transition-all shadow-lg flex items-center justify-center gap-2">
-                        <i data-lucide="message-circle" class="w-5 h-5"></i>
-                        Enviar via WhatsApp
+                    <button type="submit" class="w-full py-3.5 sm:py-4 px-4 rounded-xl accent-deep text-white font-medium text-sm sm:text-base hover:opacity-95 transition-all shadow-lg flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0"></i>
+                        <span>Enviar via WhatsApp</span>
                     </button>
                 </form>
                 <div id="successMsg" class="hidden text-center py-12 space-y-4">
@@ -406,8 +406,8 @@
                     </div>
                     <h3 class="text-2xl text-slate-900 font-serif">Solicitação Encaminhada!</h3>
                     <p class="text-muted text-sm max-w-sm mx-auto">Se a conversa não abriu automaticamente no WhatsApp, clique no botão abaixo:</p>
-                    <a id="btnOpenWa" href="#" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full accent-deep text-white font-medium hover:opacity-95 transition-all shadow-md mt-2">
-                        <i data-lucide="message-circle" class="w-4 h-4"></i> Continuar no WhatsApp
+                    <a id="btnOpenWa" href="#" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-full accent-deep text-white text-xs sm:text-sm font-medium hover:opacity-95 transition-all shadow-md mt-2">
+                        <i data-lucide="message-circle" class="w-4 h-4 shrink-0"></i> <span>Continuar no WhatsApp</span>
                     </a>
                 </div>
             </div>
@@ -520,9 +520,9 @@
             document.querySelectorAll('.city-btn').forEach(btn => {
                 const isSelected = btn.getAttribute('data-city') === cityKey;
                 if (isSelected) {
-                    btn.className = 'city-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all shadow-sm bg-[#1F385C] text-white';
+                    btn.className = 'city-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all shadow-sm bg-[#1F385C] text-white whitespace-nowrap';
                 } else {
-                    btn.className = 'city-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900 bg-transparent';
+                    btn.className = 'city-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all text-slate-600 hover:text-slate-900 bg-transparent whitespace-nowrap';
                 }
             });
         }
